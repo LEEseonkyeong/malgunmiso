@@ -1,0 +1,627 @@
+@charset "UTF-8"
+
+#wrap {}
+
+
+/* header 영역 */
+#header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #FCDD55;
+    background-color: white;
+    /* position: fixed;
+    top: 0;left: 0;
+    z-index: 5; */
+
+}
+
+.header_inner {
+    width: 1160px;
+    margin: 0 auto;
+    /* background-color: blue; */
+}
+
+.h_top_menu {
+    height: 30px;
+}
+
+.h_top_menu ul {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.h_top_menu ul li {
+    display: inline-block;
+}
+
+.h_top_menu ul li a {
+    /* border: 1px solid red; */
+    display: block;
+    line-height: 30px;
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+
+
+.h_gnv {
+    height: 80px;
+    /* background-color: blueviolet; */
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    display: block;
+    width: 290px;
+    height: 60px;
+    background: url("../img/logo3.png") no-repeat center / cover;
+    text-indent: -9999px;
+}
+
+.logo a img {}
+
+
+
+.nav {
+    float: right;
+}
+
+.h_main_menu {}
+
+.h_main_menu>li {
+    float: left;
+    position: relative;
+}
+
+.h_main_menu>li>a {
+    display: block;
+    height: 80px;
+    padding: 0 20px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.h_main_menu>li:hover>a {
+    color: #57C5B6;
+    font-weight: 600;
+}
+
+.h_main_menu>li>ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    /* background-color: aquamarine; */
+}
+
+.h_main_menu>li:hover>ul {
+    display: block;
+}
+
+.h_main_menu>li>ul>li {}
+
+.h_main_menu>li>ul>li>a {
+    background-color: #eeeeee90;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+.h_main_menu>li>ul>li:hover>a {
+    color: #57C5B6;
+}
+
+
+
+
+/* container 영역 */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    /* position: absolute;
+    top: 100px;
+    left: 0; */
+}
+
+
+/* img_slide 영역 */
+.img_slide {
+    width: 100%;
+}
+
+.img_slide a {
+    display: block;
+    width: 100%;
+    height: 720px;
+    background: url("../img/img_slide.gif");
+    text-align: center;
+    padding: 240px;
+}
+
+.img_slide a h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FCDD55;
+}
+
+.img_slide a img {
+    /* width: 437px;
+    height: 90px; */
+    margin: 5px 0 20px;
+}
+
+.img_slide a h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    line-height: 1.5;
+}
+
+
+/* clinic 영역 */
+.clinic {
+    width: 100%;
+    height: 643px;
+    background-color: #1A5F7A21;
+}
+
+.clinic h2 {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+
+.clinic_wrap {
+    width: 1160px;
+    height: 350px;
+    margin: 0px auto 80px;
+    /* border: 1px solid red; */
+}
+
+.clinic_wrap ul {}
+
+.clinic_wrap ul li {
+    width: 216px;
+    height: 350px;
+    float: left;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+}
+
+.clinic_wrap ul li:first-child {
+    margin-left: 0;
+}
+
+.clinic_wrap ul li a {
+    display: block;
+    width: 216px;
+    height: 350px;
+    padding: 50px 20px 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.clinic_wrap ul li:nth-child(odd) a:hover {
+    background-color: #159895;
+}
+
+.clinic_wrap ul li:nth-child(even) a:hover {
+    background-color: #FCDD55;
+}
+
+/* .clinic_wrap ul li a:hover .clinic_text img{
+    transform: scale(150%);
+} */
+
+.clinic_wrap ul li a .clinic_text {
+    color: white;
+}
+
+.clinic_text {}
+
+.clinic_text h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.clinic_text p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 25px 0;
+}
+
+.clinic_text img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.clinic_wrap_1 {
+    background: url("../img/cont01.jpg");
+}
+
+.clinic_wrap_2 {
+    background: url("../img/cont02.jpg");
+}
+
+.clinic_wrap_3 {
+    background: url("../img/cont03.jpg");
+}
+
+.clinic_wrap_4 {
+    background: url("../img/cont04.jpg");
+}
+
+.clinic_wrap_5 {
+    background: url("../img/cont05.jpg");
+}
+
+
+
+/* doctor 영역 */
+.doctor {
+    text-align: center;
+}
+
+.doctor h2 {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+
+.doctor h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.doctor h3>span {
+    font-weight: 600;
+    color: #159895;
+}
+
+.doctor p {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 100;
+    color: #159895;
+}
+
+.doctor img {
+    margin-bottom: 80px;
+}
+
+
+/* implant 영역 */
+.implant {
+    width: 100%;
+    height: 1432px;
+    background-color: #1A5F7A21;
+    text-align: center;
+}
+
+.implant h2 {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.implant_wrap {
+    width: 1160px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.implant_wrap ul {}
+
+.implant_wrap_1 {}
+
+.implant_wrap h3 {
+    text-align: left;
+}
+
+.implant_inner {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 40px;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+.implant_inner ul {}
+
+.implant_inner ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+.implant_inner ul li:first-child {
+    margin-left: 0;
+}
+
+.implant_inner ul li a {
+    display: block;
+    width: 570px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.implant_inner ul li a img {
+    width: 570px;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.implant_inner ul li a:hover img {
+    transform: scale(110%);
+}
+
+.implant_inner ul li p {
+    padding: 24px 0;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.implant_inner ul li .before {
+    background-color: #aaaaaa;
+
+}
+
+.implant_inner ul li .after {
+    background-color: #159895;
+}
+
+
+
+/* consult 영역 */
+.consult {
+    width: 100%;
+    /* height: 1432px; */
+    text-align: center;
+}
+
+.consult_inner {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.consult_inner h2 {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.form_table {
+    width: 100%;
+    border-top: 2px solid #159895;
+    border-bottom: 2px solid #159895;
+}
+
+.form_table tr {
+    font-size: 20px;
+}
+
+.form_table th {
+    width: 35%;
+    color: #159895;
+    /* background-color: aqua; */
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+    border-right: 1px dotted #ddd;
+}
+
+.form_table td {
+    /* width: 65%; */
+    padding: 10px 30px;
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+#select,
+input {
+    width: 200px;
+    height: 25px;
+}
+
+select {
+    width: 70px;
+    height: 25px;
+}
+
+.num {
+    width: 161px;
+}
+
+.text {
+    width: 422px;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 20px;
+}
+
+.checkbox:last-child {
+    margin: 0;
+}
+
+.text_ara {
+    width: 100%;
+    height: 200px;
+    line-height: 1.5;
+}
+
+form .btn {
+    padding: 30px 0 80px;
+}
+
+.btn input {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn .reset {
+    background-color: #aaaaaa;
+
+}
+
+.btn .submit {
+    background-color: #FCDD55;
+}
+
+
+
+
+/* footer 영역 */
+#footer {
+    width: 100%;
+    height: 300px;
+    background-color: #aaaaaa;
+    border-top: 2px solid #FCDD55;
+    font-size: 12px;
+}
+
+.f_inner {
+    width: 1160px;
+    height: 265px;
+    margin: 0 auto;
+    /* border: 1px solid yellow; */
+}
+
+.f_left {
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.f_l_logo {
+    display: inline-block;
+    width: 290px;
+    height: 60px;
+    background: url("../img/logo3.png") no-repeat center / cover;
+    text-indent: -9999px;
+}
+
+.f_l_right {
+    display: inline-block;
+    line-height: 60px;
+
+}
+
+.f_l_right a {
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.f_bottom {
+    margin-left: 250px;
+}
+
+.f_bottom ul {}
+
+.f_bottom ul li {
+    margin: 10px 0;
+}
+
+.f_bottom ul li h4 {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.f_bottom ul li span {
+    margin-right: 5px;
+}
+
+
+.f_copy {
+    width: 100%;
+    height: 35px;
+    background-color: #1A5F7A;
+}
+
+.f_copy_inner {
+    width: 1160px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.f_copy_inner span {
+    color: white;
+    font-size: 14px;
+    /* font-weight: 400; */
+    line-height: 35px;
+}
+
+
+
+
+/* scroll button */
+.scroll {
+    display: block;
+    width: 60px;
+    height: 200px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* border: 1px solid blue; */
+}
+
+.scroll a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.scroll_to_top {
+    background-color: #159895;
+    border-radius: 5px;
+}
+
+.to_kakao {
+    background: url("../img/scroll_kakao.png") no-repeat center / cover;
+    text-indent: -9999px;
+    border-radius: 5px;
+}
+.to_online {
+    background: url("../img/scroll_online.png") no-repeat center / cover;
+    background-color: #ddd;
+    border-radius: 5px;
+    text-indent: -9999px;
+}
